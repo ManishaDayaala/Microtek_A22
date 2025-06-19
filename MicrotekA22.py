@@ -119,7 +119,6 @@ from datetime import datetime, timedelta
 import streamlit as st
 
 def process_all_files():
-    # Get list of all Excel files in the folder
     excel_files = [file for file in os.listdir(folderpath) if file.endswith(('.xlsx', '.xls'))]
 
     if not excel_files:
